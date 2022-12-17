@@ -1,3 +1,33 @@
 .navbar {
-    height: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    color: white;
+}
+
+.navbar-menu {
+    display: flex;
+    margin-left: 30px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+}
+
+.navbar-item {
+    color: white;
+    margin-left: 20px;
+}
+
+.navbar-buttons__container {
+    padding-right: 40px;
+    margin: 0;
+    display: flex;
+}
+
+.navbar_button {
+    margin-left: 20px;
 }
