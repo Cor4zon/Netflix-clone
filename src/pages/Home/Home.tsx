@@ -1,10 +1,11 @@
-import React from "react";
+import "./home.scss"
+import NavBar from "../../components/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <>
-      <p>Netflix</p>
-    </>
+    <div className="home">
+      <NavBar />
+    </div>
   );
 };
 
