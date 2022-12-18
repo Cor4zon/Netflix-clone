@@ -1,10 +1,11 @@
 import Card from "../Card/Card";
 import "./cardList.scss";
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const CardList = () => {
   return (
     <div className="card-list_wrapper">
-      <h3 className="card-list__title">See again</h3>
+      <h3 className="card-list__title">See again <KeyboardArrowRightIcon /> </h3>
       <ul className="card_list">
         <li className="list_item">
           <Card />
