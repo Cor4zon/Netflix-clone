@@ -1,0 +1,14 @@
+.button {
+    width: 100px;
+    border-radius: 4px;
+    padding: 8px 16px 8px 12px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:active {
+        border: 2px solid white;
+        opacity: 1;
+    }
+}

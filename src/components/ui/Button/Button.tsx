@@ -1,5 +1,6 @@
 import InfoIcon from "./images/info-icon.svg";
 import PlayIcon from "./images/play-icon.svg";
+import "./button.scss";
 
 type ButtonProps = {
   buttonType: "play" | "info";
@@ -16,7 +17,7 @@ const Button = ({ buttonType, buttonText, onClick }: ButtonProps) => {
     }
   };
   return (
-    <button onClick={() => onClick()}>
+    <button className="button" onClick={() => onClick()}>
       <img src={getButtonIcon()} alt="button icon" /> {buttonText}
     </button>
   );
