@@ -5,10 +5,10 @@ import "./Button.scss";
 type ButtonProps = {
   buttonText: string;
   onClick: () => void;
-  disabled: boolean;
+  disabled?: boolean;
   buttonType: "play" | "info";
-  children: any;
-  style: any;
+  children?: any;
+  style?: any;
 };
 
 const Button = ({
