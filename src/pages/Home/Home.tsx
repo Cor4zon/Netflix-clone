@@ -7,7 +7,6 @@ const Home = () => {
     <div className="home">
       <NavBar />
       <Content />
-      <p>Hello world</p>
       {/* <Footer /> */}
     </div>
   );

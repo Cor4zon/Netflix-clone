@@ -3,12 +3,21 @@ import PlayIcon from "./images/play-icon.svg";
 import "./Button.scss";
 
 type ButtonProps = {
-  buttonType: "play" | "info";
   buttonText: string;
   onClick: () => void;
+  disabled: boolean;
+  buttonType: "play" | "info";
+  children: any;
+  style: any;
 };
 
-const Button = ({ buttonType, buttonText, onClick }: ButtonProps) => {
+const Button = ({
+  onClick,
+  disabled,
+  buttonType,
+  style,
+  buttonText,
+}: ButtonProps) => {
   const getButtonIcon = () => {
     if (buttonType === "play") {
       return PlayIcon;
@@ -16,8 +25,13 @@ const Button = ({ buttonType, buttonText, onClick }: ButtonProps) => {
       return InfoIcon;
     }
   };
+
   return (
-    <button className="button" onClick={() => onClick()}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      style={style}
+    >
       <img src={getButtonIcon()} alt="button icon" /> {buttonText}
     </button>
   );
