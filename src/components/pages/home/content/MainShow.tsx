@@ -1,5 +1,5 @@
-import BackgroundSvg from "../../../../assets/images/temp-big-image.png";
-import "./mainShow.scss";
+import BackgroundSvg from "@/assets/images/temp-big-image.png";
+import "./MainShow.scss";
 
 const MainShow = () => {
     // todo: разобраться с затемнением

@@ -1,5 +1,5 @@
-import "./navbar.scss";
-import NetflixLogo from "../../../assets/images/netflix-logo.svg";
+import "./Navbar.scss";
+import NetflixLogo from "@/assets/images/netflix-logo.svg";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 
