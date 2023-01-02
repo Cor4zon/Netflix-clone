@@ -1,5 +1,5 @@
 import "./Card.scss";
-import CardImage from "../../../assets/images/card-image.png";
+import CardImage from "@/assets/images/card-image.png";
 
 const Card = () => {
     return <div className="card">

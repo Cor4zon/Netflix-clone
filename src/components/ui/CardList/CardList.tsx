@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import Card from "@/components/ui/Card/Card";
 import "./CardList.scss";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 

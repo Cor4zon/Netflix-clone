@@ -1,4 +1,4 @@
-import BackgroundSvg from "../../../../assets/images/temp-big-image.png";
+import BackgroundSvg from "@/assets/images/temp-big-image.png";
 import "./MainShow.scss";
 
 const MainShow = () => {
