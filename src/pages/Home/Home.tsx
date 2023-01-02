@@ -1,4 +1,4 @@
-import "./home.scss";
+import "./Home.scss";
 import NavBar from "../../components/ui/Navbar/Navbar";
 import Content from "../../components/pages/home/content/Content";
 

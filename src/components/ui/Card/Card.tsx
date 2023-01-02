@@ -1,4 +1,4 @@
-import "./card.scss";
+import "./Card.scss";
 import CardImage from "../../../assets/images/card-image.png";
 
 const Card = () => {

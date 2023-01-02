@@ -1,5 +1,5 @@
 import CardList from "../../../ui/CardList/CardList";
-import "./showRecomendations.scss";
+import "./ShowRecomendations.scss";
 
 const ShowRecomendations = () => {
   return (

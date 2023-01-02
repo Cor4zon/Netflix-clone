@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import "./cardList.scss";
+import "./CardList.scss";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const CardList = () => {

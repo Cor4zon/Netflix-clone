@@ -1,6 +1,6 @@
 import InfoIcon from "./images/info-icon.svg";
 import PlayIcon from "./images/play-icon.svg";
-import "./button.scss";
+import "./Button.scss";
 
 type ButtonProps = {
   buttonType: "play" | "info";
