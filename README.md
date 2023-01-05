@@ -6,5 +6,5 @@
 
 ## What i learned 🧠
 
-1. How to change create-react-app on vite after application was launched 
+1. How to change [create-react-app on vite](https://cathalmacdonnacha.com/migrating-from-create-react-app-cra-to-vite) after application was launched 
 
