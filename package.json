@@ -42,7 +42,8 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "dev": "vite preview",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -68,7 +69,8 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.31.11"
+    "eslint-plugin-react": "^7.31.11",
+    "husky": "^8.0.0"
   },
   "module.alias": {
     "@": "./src",

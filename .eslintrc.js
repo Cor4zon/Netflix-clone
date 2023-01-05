@@ -47,7 +47,7 @@ module.exports = {
     // Add your own rules here to override ones from the extended configs.
     semi: ['error', 'always'],
     quotes: ['error', 'single'],
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
+    'react/react-in-jsx-scope': 'off',
+    'import/no-unresolved': 'off',
   },
 };

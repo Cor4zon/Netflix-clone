@@ -1,7 +1,7 @@
-import "./Content.scss";
-import MainShow from "./MainShow";
-import ShowRecomendations from "./ShowRecomendations";
-import Button from "@/components/ui/Button/Button";
+import './Content.scss';
+import MainShow from './MainShow';
+import ShowRecomendations from './ShowRecomendations';
+import Button from '@/components/ui/Button/Button';
 
 const Content = () => {
   return (
@@ -10,7 +10,13 @@ const Content = () => {
       <MainShow />
       <ShowRecomendations />
 
-      <Button buttonType="play" buttonText="Watch" onClick={() => {}} />
+      <Button
+        buttonType="play"
+        buttonText="Watch"
+        onClick={() => {
+          console.log('play');
+        }}
+      />
       {/* special row with rating */}
       {/* row-3 */}
     </div>

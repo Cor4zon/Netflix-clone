@@ -1,5 +1,5 @@
-import BackgroundSvg from "@/assets/images/temp-big-image.png";
-import "./MainShow.scss";
+import BackgroundSvg from '@/assets/images/temp-big-image.png';
+import './MainShow.scss';
 
 const MainShow = () => {
     // todo: разобраться с затемнением
@@ -9,7 +9,7 @@ const MainShow = () => {
         {/* button 1 */}
         {/* button 2 */}
         <img src={BackgroundSvg} alt="background" className="main-show" />
-    </div>
+    </div>;
 };
 
 export default MainShow;

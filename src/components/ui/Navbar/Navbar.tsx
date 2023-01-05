@@ -1,6 +1,6 @@
-import "./Navbar.scss";
-import NetflixLogo from "@/assets/images/netflix-logo.svg";
-import SearchIcon from "@mui/icons-material/Search";
+import './Navbar.scss';
+import NetflixLogo from '@/assets/images/netflix-logo.svg';
+import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 
 const NavBar = () => {
@@ -19,10 +19,10 @@ const NavBar = () => {
 
       <div className="navbar-buttons__container">
         <div className="navbar_button">
-          <SearchIcon color={"inherit"} />
+          <SearchIcon color={'inherit'} />
         </div>
         <div className="navbar_button">
-          <NotificationsNoneIcon color={"inherit"} />
+          <NotificationsNoneIcon color={'inherit'} />
         </div>
       </div>
     </div>

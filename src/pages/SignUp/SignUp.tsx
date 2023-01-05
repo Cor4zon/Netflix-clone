@@ -1,4 +1,4 @@
-import "./SignUp.scss";
+import './SignUp.scss';
 
 const SingUp = () => {
   return (

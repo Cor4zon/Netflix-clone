@@ -1,12 +1,12 @@
-import InfoIcon from "./images/info-icon.svg";
-import PlayIcon from "./images/play-icon.svg";
-import "./Button.scss";
+import InfoIcon from './images/info-icon.svg';
+import PlayIcon from './images/play-icon.svg';
+import './Button.scss';
 
 type ButtonProps = {
   buttonText: string;
   onClick: () => void;
   disabled?: boolean;
-  buttonType: "play" | "info";
+  buttonType: 'play' | 'info';
   children?: any;
   style?: any;
 };
@@ -19,9 +19,9 @@ const Button = ({
   buttonText,
 }: ButtonProps) => {
   const getButtonIcon = () => {
-    if (buttonType === "play") {
+    if (buttonType === 'play') {
       return PlayIcon;
-    } else if (buttonType === "info") {
+    } else if (buttonType === 'info') {
       return InfoIcon;
     }
   };
