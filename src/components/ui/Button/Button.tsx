@@ -7,8 +7,8 @@ type ButtonProps = {
   onClick: () => void;
   disabled?: boolean;
   buttonType: 'play' | 'info';
-  children?: any;
-  style?: any;
+  children?: any; // todo: add typescript
+  style?: any; // todo: add typescript
 };
 
 const Button = ({

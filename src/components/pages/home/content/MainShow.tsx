@@ -1,27 +1,30 @@
-import './MainShow.scss';
 import Button from '@/components/ui/Button/Button';
+import ShowLogoSvg from './images/show-logo.svg';
+import './MainShow.scss';
 
 const MainShow = () => {
-  // todo: разобраться с затемнением
   return (
     <div className="main-show__container">
-      {/* n-show or n-series icon */}
-      {/* show name */}
-      <Button
-        buttonType="play"
-        buttonText="Watch"
-        onClick={() => {
-          console.log('play');
-        }}
-      />
-      <Button
-        buttonType="play"
-        buttonText="Watch"
-        onClick={() => {
-          console.log('play');
-        }}
-      />
-      {/* <img src={BackgroundSvg} alt="background" className="main-show" /> */}
+      <div className='main-show__content'>
+        <img src={ShowLogoSvg} alt="show-logo" />
+
+        <div className="buttons-container">
+          <Button
+            buttonType="play"
+            buttonText="Watch"
+            onClick={() => {
+              console.log('play');
+            }}
+          />
+          <Button
+            buttonType="play"
+            buttonText="Watch"
+            onClick={() => {
+              console.log('play');
+            }}
+          />
+        </div>
+      </div>
     </div>
   );
 };
