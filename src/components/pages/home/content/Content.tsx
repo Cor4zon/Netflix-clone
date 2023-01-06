@@ -9,14 +9,6 @@ const Content = () => {
       {/* background-image */}
       <MainShow />
       <ShowRecomendations />
-
-      <Button
-        buttonType="play"
-        buttonText="Watch"
-        onClick={() => {
-          console.log('play');
-        }}
-      />
       {/* special row with rating */}
       {/* row-3 */}
     </div>
