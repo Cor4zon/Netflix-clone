@@ -7,15 +7,15 @@ import Slider from 'react-slick';
 
 const CardList = () => {
   const settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    infinite: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
   };
 
   return (
-    <div className="card-list_wrapper">
+    <div>
       <h3 className="card-list__title">
         See again <KeyboardArrowRightIcon />{' '}
       </h3>
@@ -29,11 +29,6 @@ const CardList = () => {
         <Card />
         <Card />
       </Slider>
-      {/* <ul className="card_list">
-        <li className="list_item">
-          <Card />
-        </li>
-      </ul> */}
     </div>
   );
 };
