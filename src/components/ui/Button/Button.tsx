@@ -11,13 +11,7 @@ type ButtonProps = {
   style?: any; // todo: add typescript
 };
 
-const Button = ({
-  onClick,
-  disabled,
-  buttonType,
-  style,
-  buttonText,
-}: ButtonProps) => {
+const Button = ({ onClick, disabled, buttonType, style, buttonText }: ButtonProps) => {
   const getButtonIcon = () => {
     if (buttonType === 'play') {
       return PlayIcon;
@@ -27,12 +21,9 @@ const Button = ({
   };
 
   return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      style={style}
-    >
-      <img src={getButtonIcon()} alt="button icon" /> {buttonText}
+    <button onClick={onClick} disabled={disabled} style={style}>
+      <img src={getButtonIcon()} alt="button icon" />{' '}
+      <p className="button-text">{buttonText}</p>
     </button>
   );
 };
