@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const authRouter = require('./routes/auth');
+const usersRouter = require('./routes/users');
 
 dotenv.config();
 const app = express();
@@ -20,5 +21,6 @@ async function main() {
 app.use(express.json());
 
 app.use("/api/auth", authRouter);
+app.use('/api/users', usersRouter);
 
 app.listen(8080);
