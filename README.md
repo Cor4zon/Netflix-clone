@@ -11,3 +11,7 @@
 2. How to set up [Eslint and Prettier](https://cathalmacdonnacha.com/setting-up-eslint-prettier-in-vitejs)
 
 3. How to use [Husky](https://github.com/typicode/husky) and [pretty-quick](https://github.com/azz/pretty-quick) 
+
+4. How to create REST API on Node.js with help of Mongoose
+
+5. How to structure project on Node.js
