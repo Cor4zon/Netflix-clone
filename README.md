@@ -2,7 +2,7 @@
 
 Пока не готов backend, можно воспользоваться [API](https://developers.themoviedb.org/3/getting-started/introduction)
 
-
+[Design](https://www.figma.com/file/6ry5jlt0yHsg1RvSUHG3CM/Netflix-Langing-Page-UI-Clone-(Community)?node-id=53%3A124&t=SY0BINP7Oslo4iPL-0)
 
 ## What i learned 🧠
 
