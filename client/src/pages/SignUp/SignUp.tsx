@@ -1,11 +1,12 @@
 import './SignUp.scss';
 
-const SingUp = () => {
+const SignUp = () => {
   return (
     <div className="wrapper">
+      <div className=""
       <p>Hello world</p>
     </div>
   );
 };
 
-export default SingUp;
+export default SignUp;

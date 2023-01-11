@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '@/App';
 import SignUp from '@/pages/SignUp/SignUp';
+import SignIn from '@/pages/SignIn/SignIn';
 import PageNotFound from '@/pages/PageNotFound/PageNotFound';
 
 export const router = createBrowserRouter([
@@ -11,7 +12,11 @@ export const router = createBrowserRouter([
     errorElement: <PageNotFound />,
   },
   {
-    path: '/signup',
+    path: '/signin',
+    element: <SignIn />,
+  },
+  {
+    path: '/register',
     element: <SignUp />,
   },
 ]);
