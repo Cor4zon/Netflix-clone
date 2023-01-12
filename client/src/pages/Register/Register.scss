@@ -3,7 +3,48 @@
 }
 
 .content {
-    background-image: url(images/background-signup.png);
-    height: 700px;
+    background-image: url("images/hero-image.png");
+    background-color: red;
+    height: 747px;
     width: 100%;
+}
+
+.registration-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.registraion-header__btns {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.language-select {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.select-item {
+    background-color: white;
+
+    
+}
+
+.register-btn {
+    background-color: red  !important;
+    color: white !important;
+    margin-left: 40px !important;
+}
+
+.registraion__logo-img {
+    margin-left: 30px;
 }
