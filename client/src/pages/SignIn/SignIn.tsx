@@ -3,7 +3,11 @@ import './SignIn.scss';
 const SingIn = () => {
   return (
     <div className="signin-wrapper">
-      <p>Hello world</p>
+      <div className="content">
+        <p>Hello world</p>
+
+
+      </div>
     </div>
   );
 };

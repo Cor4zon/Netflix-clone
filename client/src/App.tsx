@@ -1,6 +1,6 @@
 import Home from './pages/Home/Home';
 
-import SignUp from './pages/SignUp/SignUp';
+import SignUp from './pages/Register/Register';
 import './App.scss';
 
 function App() {
