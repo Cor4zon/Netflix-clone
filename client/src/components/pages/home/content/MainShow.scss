@@ -16,7 +16,9 @@
 
 .buttons-container {
   margin-top: 100px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-show__description {
