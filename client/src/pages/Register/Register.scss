@@ -109,4 +109,17 @@
 
 .offer-container {
   height: 466px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-bottom: 8px solid #222222;
+}
+
+.offer-text-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

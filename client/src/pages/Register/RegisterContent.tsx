@@ -50,6 +50,10 @@ export const RegisterContent = () => {
           </p>
         </div>
       </div>
+
+      <div className='faq-container'>
+        {/* https://doka.guide/html/details/ */}
+      </div>
     </>
   );
 };
