@@ -51,7 +51,7 @@ export const RegisterContent = () => {
 
       <div className="faq-container">
         {/* https://doka.guide/html/details/ */}
-        <details>
+        <details className="faq-block">
           <summary>What is Netflix?</summary>
           <p>
             Netflix is a streaming service that offers a wide variety of award-winning TV
@@ -62,7 +62,7 @@ export const RegisterContent = () => {
             week!
           </p>
         </details>
-        <details>
+        <details className="faq-block">
           <summary>How much does Netflix cost?</summary>
           <p>
             Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming
@@ -70,7 +70,7 @@ export const RegisterContent = () => {
             month. No extra costs, no contracts.
           </p>
         </details>
-        <details>
+        <details className="faq-block">
           <summary>Where can I watch?</summary>
           <p>
             Watch anywhere, anytime. Sign in with your Netflix account to watch instantly
@@ -82,8 +82,7 @@ export const RegisterContent = () => {
             Take Netflix with you anywhere.
           </p>
         </details>
-
-        <details>
+        <details className="faq-block">
           <summary>How do I cancel?</summary>
           <p>
             Netflix is flexible. There are no pesky contracts and no commitments. You can
@@ -99,8 +98,7 @@ export const RegisterContent = () => {
             anytime you want.
           </p>
         </details>
-
-        <details>
+        <details className="faq-block">
           <summary>Is Netflix good for kids?</summary>
           <p>
             The Netflix Kids experience is included in your membership to give parents
@@ -110,8 +108,7 @@ export const RegisterContent = () => {
             titles you don’t want kids to see.
           </p>
         </details>
-
-        <details>
+        <details className="faq-block">
           <summary>Why am I seeing this language?</summary>
           <p>Your browser preferences determine the language shown here.</p>
         </details>
