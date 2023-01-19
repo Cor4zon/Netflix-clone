@@ -11,10 +11,18 @@ const ShowRecomendations = ({ type }) => {
     const getRandomList = async () => {
       try {
         const res = await axios.get(
-          `lists${type ? '?type=' + type : ''}${genre ? '&genre=' + genre : ''}`,
+          `http://localhost:8080/api/lists/${type ? '?type=' + type : ''}${
+            genre ? '&genre=' + genre : ''
+          }`,
+          {
+            headers: {
+              token:
+                'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzk1YmJhYzIxMGVjMTFkZTJlNDFlMSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY3NDE0MDkyNSwiZXhwIjoxNjc0NTcyOTI1fQ.CMYXfS5J_eeKABM0n3bDoOuZ5Sbh00Guk1HhETiUbJI',
+            },
+          },
         );
         console.log(res);
-        setLists(res);
+        setLists(res.data);
       } catch (err) {
         console.log(err);
       }
@@ -24,13 +32,9 @@ const ShowRecomendations = ({ type }) => {
 
   return (
     <div className="shows-wrapper">
-      <CardList />
-      <CardList />
-      <CardList />
-      <CardList />
-      <CardList />
-      <CardList />
-      <CardList />
+      {lists.map((list) => {
+        return <CardList list={list} key={list.title} />;
+      })}
     </div>
   );
 };

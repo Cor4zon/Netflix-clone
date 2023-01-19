@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-const CardList = () => {
+const CardList = ({ list }) => {
   const settings = {
     dots: false,
     infinite: false,
@@ -17,17 +17,13 @@ const CardList = () => {
   return (
     <div>
       <h3 className="card-list__title">
-        See again <KeyboardArrowRightIcon />{' '}
+        {list.title} <KeyboardArrowRightIcon />{' '}
       </h3>
       return (
       <Slider {...settings}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {list?.content?.map((movie) => {
+          return <Card movie={movie} />;
+        })}
       </Slider>
     </div>
   );
