@@ -6,9 +6,11 @@ const authRouter = require('./routes/auth');
 const usersRouter = require('./routes/users');
 const moviesRouter = require('./routes/movies');
 const listsRouter = require('./routes/lists');
+const cors = require('cors');
 
 dotenv.config();
 const app = express();
+app.use(cors());
 
 main().catch(err => console.log(err));
 
