@@ -5,12 +5,13 @@ import { useEffect } from 'react';
 const Card = ({ movie }) => {
   console.log(movie.img);
   
-  useEffect(() => {
-    const getMovie = () => {
-        await axios.get('')
-    };
-    getMovie();
-  }, []);
+  // useEffect(() => {
+  //   const getMovie = () => {
+  //     //not neccesary to use await before making this axios get request
+  //       await axios.get('')
+  //   };
+  //   getMovie();
+  // }, []);
 
   return (
     <div className="card">
