@@ -1,17 +1,17 @@
 import './Card.scss';
 import CardImage from '@/assets/images/card-image.png';
 import { useEffect } from 'react';
+import axios from 'axios';
 
 const Card = ({ movie }) => {
   console.log(movie.img);
-  
-  // useEffect(() => {
-  //   const getMovie = () => {
-  //     //not neccesary to use await before making this axios get request
-  //       await axios.get('')
-  //   };
-  //   getMovie();
-  // }, []);
+
+  useEffect(() => {
+    const getMovie = async () => {
+      await axios.get('');
+    };
+    getMovie();
+  }, []);
 
   return (
     <div className="card">
