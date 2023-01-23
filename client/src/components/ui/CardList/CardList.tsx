@@ -22,7 +22,7 @@ const CardList = ({ list }) => {
       return (
       <Slider {...settings}>
         {list?.content?.map((movie) => {
-          return <Card movie={movie} />;
+          return <Card movieId={movie} />;
         })}
       </Slider>
     </div>
