@@ -29,6 +29,7 @@
   },
   "scripts": {
     "start": "nodemon app.js",
+    "dev": "nodemon app.js",
     "lint": "eslint . --ext .ts,.tsx"
   }
 }
