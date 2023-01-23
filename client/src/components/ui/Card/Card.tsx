@@ -2,6 +2,7 @@ import './Card.scss';
 import CardImage from '@/assets/images/card-image.png';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Card = ({ movieId }) => {
   const [movie, setMovie] = useState(null);
@@ -22,9 +23,11 @@ const Card = ({ movieId }) => {
   }, [7]);
 
   return (
-    <div className="card">
-      <img src={movie?.img} alt="card" className="card_image" />
-    </div>
+    <Link to={{ pathname: '/watch', movir: movie }}>
+      <div className="card">
+        <img src={movie?.img} alt="card" className="card_image" />
+      </div>
+    </Link>
   );
 };
 

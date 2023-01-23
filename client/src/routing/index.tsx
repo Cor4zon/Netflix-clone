@@ -3,6 +3,7 @@ import App from '@/App';
 import Register from '@/pages/Register/Register';
 import SignIn from '@/pages/SignIn/SignIn';
 import PageNotFound from '@/pages/PageNotFound/PageNotFound';
+import Watch from '@/components/pages/watch/Watch';
 
 export const router = createBrowserRouter([
   {
@@ -18,5 +19,9 @@ export const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register />,
+  },
+  {
+    path: '/watch',
+    element: <Watch />,
   },
 ]);
