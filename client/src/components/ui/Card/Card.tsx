@@ -1,21 +1,22 @@
 import './Card.scss';
 import CardImage from '@/assets/images/card-image.png';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Card = ({ movie }) => {
-  console.log(movie.img);
+const Card = ({ movieId }) => {
+  const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     const getMovie = async () => {
-      await axios.get('');
+      const result = await axios.get(`http://localhost:8080/api/movies/${movieId}`);
+      setMovie(result);
     };
     getMovie();
   }, []);
 
   return (
     <div className="card">
-      <img src={movie.img} alt="card" className="card_image" />
+      <img src={movie?.img} alt="card" className="card_image" />
     </div>
   );
 };
