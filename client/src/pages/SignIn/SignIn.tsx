@@ -20,7 +20,8 @@ const SingIn = () => {
           password
         },
       });
-
+      localStorage.setItem("token", result.data.accessToken);
+      
       console.log(result);
       navigate("/");
     };
