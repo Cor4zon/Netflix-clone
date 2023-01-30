@@ -14,3 +14,15 @@
 4. How to create REST API on Node.js with help of Mongoose
 
 5. How to structure project on Node.js
+
+
+
+## Todo list for this week
+
+- [ ] фича 6 (select по типу сериал или фильм)
+
+- [ ] фича 5 (select фильмов по жанрам)
+
+- [ ] фича 4 (клик по фильму и просмотр фильма)
+
+- [ ] фича 3 (просмотр списка фильмов на главной)
