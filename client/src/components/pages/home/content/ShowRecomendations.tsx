@@ -17,7 +17,7 @@ const ShowRecomendations = ({ type }) => {
           {
             headers: {
               token:
-                'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYzk1YmJhYzIxMGVjMTFkZTJlNDFlMSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY3NDE0MDkyNSwiZXhwIjoxNjc0NTcyOTI1fQ.CMYXfS5J_eeKABM0n3bDoOuZ5Sbh00Guk1HhETiUbJI',
+                `JWT ${localStorage.getItem('token')}`,
             },
           },
         );
