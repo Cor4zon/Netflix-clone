@@ -18,7 +18,7 @@
 6. How to make simple authentication
 
 
-## Todo list for this week
+## Todo list for this week 
 
 - [ ] фича 6 (select по типу сериал или фильм)
 
