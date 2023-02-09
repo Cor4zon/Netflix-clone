@@ -1,4 +1,4 @@
-### Netflix clone
+## Netflix clone
 
 
 [Design](https://www.figma.com/file/6ry5jlt0yHsg1RvSUHG3CM/Netflix-Langing-Page-UI-Clone-(Community)?node-id=53%3A124&t=SY0BINP7Oslo4iPL-0)
