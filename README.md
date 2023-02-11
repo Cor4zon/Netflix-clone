@@ -17,6 +17,10 @@
 
 6. How to make simple authentication
 
+7. How to use mongoDb Cloud 
+
+8. Mongoose
+
 
 ## Todo list for this week 
 
