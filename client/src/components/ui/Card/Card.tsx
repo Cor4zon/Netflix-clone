@@ -21,7 +21,7 @@ const Card = ({ movieId }) => {
   }, [7]);
 
   return (
-    <Link to={{ pathname: '/watch', movir: movie }}>
+    <Link to={{ pathname: '/watch'}} state={{movir: movie}}>
       <div className="card">
         <img src={movie?.img} alt="card" className="card_image" />
       </div>
