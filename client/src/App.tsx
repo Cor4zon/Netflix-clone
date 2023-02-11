@@ -12,7 +12,6 @@ function App() {
   const token = localStorage.getItem("token");
   
   if (!token) {
-    console.log('no token');
     return <SingIn />
   }
 

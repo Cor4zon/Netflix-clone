@@ -21,7 +21,6 @@ const SingIn = () => {
         },
       });
       localStorage.setItem("token", result.data.accessToken);
-      
       console.log(result);
       navigate("/");
     };

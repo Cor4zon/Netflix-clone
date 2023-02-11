@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 const Card = ({ movieId }) => {
   const [movie, setMovie] = useState(null);
 
-  console.log(movieId);
   useEffect(() => {
     const getMovie = async () => {
       const result = await axios.get(`http://localhost:8080/api/movies/${movieId}`, {
@@ -16,7 +15,6 @@ const Card = ({ movieId }) => {
           `JWT ${localStorage.getItem('token')}`,
         },
       });
-      console.log(result);
       setMovie(result.data);
     };
     getMovie();
