@@ -10,10 +10,21 @@ const NavBar = () => {
       <div className="navbar-menu">
         <img src={NetflixLogo} alt="netflix" />
         <ul className="navbar-list">
-          <li className="navbar-item">Start</li>
-          <li className="navbar-item">Show</li>
-          <li className="navbar-item">Movies</li>
-          <li className="navbar-item">New</li>
+          <li className="navbar-item">
+            <Link to='/'>
+              Home
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to='/series'>
+              Tv Shows
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to='/movies'>
+              Movies
+            </Link>
+          </li>
           <li className="navbar-item">
             <Link to='/my-list'>
               My List
