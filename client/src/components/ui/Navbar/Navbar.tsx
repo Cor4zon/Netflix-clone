@@ -2,6 +2,7 @@ import './Navbar.scss';
 import NetflixLogo from '@/assets/images/netflix-logo.svg';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -13,7 +14,11 @@ const NavBar = () => {
           <li className="navbar-item">Show</li>
           <li className="navbar-item">Movies</li>
           <li className="navbar-item">New</li>
-          <li className="navbar-item">My List</li>
+          <li className="navbar-item">
+            <Link to='/my-list'>
+              My List
+            </Link>
+          </li>
         </ul>
       </div>
 
