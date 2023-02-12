@@ -5,6 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Link } from 'react-router-dom';
 
+
+
 const NavBar = () => {
   return (
     <div className="navbar">

@@ -1,0 +1,35 @@
+.profile-settings {
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    width: 200px;
+    z-index: 10;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.profile-setting-list {
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+
+.profile-settings-item {
+    color: white;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    height: 40px;
+}
+
+.settings-item__text {
+    margin-left: 15px;
+}
+
+.profile-signOut {
+    display: flex;
+    border-top: 1px solid white;
+    margin-left: -10px;
+    justify-content: center;
+}
