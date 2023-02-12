@@ -1,5 +1,6 @@
 import './Navbar.scss';
 import NetflixLogo from '@/assets/images/netflix-logo.svg';
+import ProfileIcon from '@/assets/images/profile-icon.png';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Link } from 'react-router-dom';
@@ -41,6 +42,9 @@ const NavBar = () => {
         </div>
         <div className="navbar_button">
           <NotificationsNoneIcon color={'inherit'} />
+        </div>
+        <div className="navbar_button">
+          <img src={ProfileIcon} alt="netflix" />
         </div>
       </div>
     </div>
