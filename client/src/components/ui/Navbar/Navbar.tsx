@@ -8,7 +8,9 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navbar-menu">
-        <img src={NetflixLogo} alt="netflix" />
+        <Link to="/">
+          <img src={NetflixLogo} alt="netflix" />
+        </Link>
         <ul className="navbar-list">
           <li className="navbar-item">
             <Link to='/'>
