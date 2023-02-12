@@ -5,6 +5,7 @@ import SignIn from '@/pages/SignIn/SignIn';
 import PageNotFound from '@/pages/PageNotFound/PageNotFound';
 import Watch from '@/components/pages/watch/Watch';
 import MyList from '@/pages/MyList/MyList';
+import SignOut from '@/pages/SignOut/SignOut';
 
 export const router = createBrowserRouter([
   {
@@ -28,5 +29,9 @@ export const router = createBrowserRouter([
   {
     path: '/my-list',
     element: <MyList />,
+  },
+  {
+    path: '/signout',
+    element: <SignOut />,
   },
 ]);

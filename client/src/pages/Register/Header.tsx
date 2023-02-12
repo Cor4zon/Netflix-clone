@@ -5,8 +5,11 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import Button from '@mui/material/Button';
 import NetflixLogo from '@/assets/images/netflix-logo.svg';
+import { useNavigate } from 'react-router-dom';
 
 export const Header = () => {
+  const navigate = useNavigate();
+
   const [language, setLanguage] = React.useState('1');
 
   const handleChange = (event: SelectChangeEvent) => {
@@ -29,8 +32,8 @@ export const Header = () => {
             <ArrowDropDownIcon />
           </MenuItem>
         </Select>
-        <Button className="register-btn" variant="contained">
-          Sign Up
+        <Button className="register-btn" variant="contained" onClick={() => navigate("/signin")}>
+          Sign In
         </Button>
       </div>
     </div>
