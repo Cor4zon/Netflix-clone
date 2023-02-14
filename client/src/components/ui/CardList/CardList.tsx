@@ -19,7 +19,6 @@ const CardList = ({ list }) => {
       <h3 className="card-list__title">
         {list.title} <KeyboardArrowRightIcon />{' '}
       </h3>
-      return (
       <Slider {...settings}>
         {list?.content?.map((movie) => {
           return <Card movieId={movie} />;
