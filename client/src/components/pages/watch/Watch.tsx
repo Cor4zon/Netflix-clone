@@ -1,4 +1,4 @@
-import React from 'react';
+import "./Watch.scss";
 import { useLocation } from 'react-router-dom';
 
 const Watch = () => {
