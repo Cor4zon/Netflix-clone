@@ -1,0 +1,32 @@
+.footer-container {
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-list {
+    list-style-type: none;
+
+    p.yearWorks {
+        color: #757575;
+        margin-top: 20px;
+    }
+}
+
+.footer-link {
+    margin-bottom: 10px;
+    
+    a {
+        color: #757575;
+    }
+
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    
+    .social-link {
+        margin-left: 20px;
+    }
+}
