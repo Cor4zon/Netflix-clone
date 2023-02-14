@@ -21,6 +21,8 @@
 
 8. Mongoose
 
+9. How to create cool video player with [html video](https://doka.guide/html/video/)
+
 
 ## Todo list for this week 
 
