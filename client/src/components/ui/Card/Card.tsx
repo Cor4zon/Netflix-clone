@@ -18,7 +18,7 @@ const Card = ({ movieId }) => {
       setMovie(result.data);
     };
     getMovie();
-  }, [7]);
+  }, []);
 
   return (
     <Link to={{ pathname: '/watch'}} state={{movir: movie}}>
