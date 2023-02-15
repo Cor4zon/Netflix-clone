@@ -27,7 +27,7 @@ const MainShow = () => {
   return (
     <div className="main-show__container" style={{backgroundImage: 'url(' + movie?.img + ')'}}>
       <div className="main-show__content">
-        <img src={movie?.titleImg} alt="show-logo" />
+        <img src={movie?.titleImg} alt="show-logo" className="titleImg" />
         <p className="main-show__description">
           {movie?.desc}
         </p>
