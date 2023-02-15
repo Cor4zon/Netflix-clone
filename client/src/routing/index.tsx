@@ -6,6 +6,8 @@ import PageNotFound from '@/pages/PageNotFound/PageNotFound';
 import Watch from '@/components/pages/watch/Watch';
 import MyList from '@/pages/MyList/MyList';
 import SignOut from '@/pages/SignOut/SignOut';
+import Movies from '@/pages/Movies/Movies';
+import Series from '@/pages/Series/Series';
 
 export const router = createBrowserRouter([
   {
@@ -33,5 +35,13 @@ export const router = createBrowserRouter([
   {
     path: '/signout',
     element: <SignOut />,
+  },
+  {
+    path: '/movies',
+    element: <Movies />,
+  },
+  {
+    path: '/series',
+    element: <Series />,
   },
 ]);
