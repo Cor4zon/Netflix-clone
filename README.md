@@ -23,6 +23,9 @@
 
 9. How to create cool video player with [html video](https://doka.guide/html/video/)
 
+10. How to add dynamic [background image via style](https://stackoverflow.com/questions/36413862/set-background-in-react-js-using-style)
+
+
 
 ## Todo list for this week 
 
