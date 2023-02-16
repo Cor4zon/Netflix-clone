@@ -3,6 +3,8 @@
 
 [Design](https://www.figma.com/file/6ry5jlt0yHsg1RvSUHG3CM/Netflix-Langing-Page-UI-Clone-(Community)?node-id=53%3A124&t=SY0BINP7Oslo4iPL-0)
 
+[videos](https://gist.github.com/jsturgis/3b19447b304616f18657)
+
 ## What i learned 🧠
 
 1. How to change [create-react-app on vite](https://cathalmacdonnacha.com/migrating-from-create-react-app-cra-to-vite) after application was launched 
