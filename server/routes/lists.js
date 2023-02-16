@@ -35,20 +35,24 @@ router.get("/", verify, async (req, res) => {
     const genreQuery = req.query.genre;
     let moviesList = [];
 
+    console.log('type');
     try {
         if (typeQuery) {
+            console.log('mew mew ');
             if (genreQuery) {
                 moviesList = await List.aggregate([
                     { $sample: { size: 10} },
                     { $match: { type: typeQuery, genre: genreQuery }},
                 ]);
             } else {
+                console.log('gav gav');
                 moviesList = await List.aggregate([
-                    { $sample: { size: 1} },
+                    { $sample: { size: 10} },
                     { $match: { type: typeQuery }},
                 ]);
             }
         } else {
+            console.log('mew');
             moviesList = await List.aggregate([ { $sample: { size: 10} }]);
         }
         res.status(200).json(moviesList);
