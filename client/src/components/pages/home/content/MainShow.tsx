@@ -2,6 +2,7 @@ import Button from '@/components/ui/Button/Button';
 import axios from 'axios';
 import { cpuUsage } from 'process';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import ShowLogoSvg from './images/show-logo.svg';
 import './MainShow.scss';
 
@@ -32,13 +33,16 @@ const MainShow = () => {
           {movie?.desc}
         </p>
         <div className="buttons-container">
+        <Link to={{ pathname: '/watch'}} state={{movir: movie}}>
           <Button
-            buttonType="play"
-            buttonText="Watch"
-            onClick={() => {
-              console.log('play');
-            }}
-          />
+              buttonType="play"
+              buttonText="Watch"
+              onClick={() => {
+                console.log('play');
+              }}
+            />
+        </Link>
+          
           <Button
             buttonType="info"
             buttonText="More Info"
