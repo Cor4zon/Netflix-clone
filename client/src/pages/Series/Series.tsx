@@ -11,12 +11,6 @@ const Movies = () => {
     const [ genre, setGenre ] = useState("");
     const [ lists, setLists ] = useState([]);
     const [ options, setOptions ] = useState([]);
-    // const options = [
-    //     { value: null, label: 'all' },
-    //     { value: 'chocolate', label: 'Chocolate' },
-    //     { value: 'strawberry', label: 'Strawberry' },
-    //     { value: 'vanilla', label: 'Vanilla' },
-    //   ];
 
     useEffect(() => {
         const getMovies = async () => {
