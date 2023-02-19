@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useEffect, useState} from 'react';
 import Select, { ActionMeta, SingleValue } from 'react-select';
 
-
+import "./Series.scss";
 
 
 const Movies = () => {
@@ -52,6 +52,7 @@ const Movies = () => {
     return (
         <div>
             <Select
+                className={"selectStyle"}
                 value={genre}
                 onChange={handleChange}
                 options={options}
