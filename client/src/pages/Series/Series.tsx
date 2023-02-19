@@ -1,42 +1,52 @@
 import CardList from '@/components/ui/CardList/CardList';
 import NavBar from '@/components/ui/Navbar/Navbar';
 import axios from 'axios';
-import React, { useEffect, useState} from 'react';
-import Select from 'react-select';
+import { useEffect, useState} from 'react';
+import Select, { ActionMeta, SingleValue } from 'react-select';
 
 
 
 
 const Movies = () => {
-    const [ genre, setGenre ] = useState("");
+    const [ genre, setGenre ] = useState<SingleValue<string>>("");
     const [ lists, setLists ] = useState([]);
     const [ options, setOptions ] = useState([]);
 
     useEffect(() => {
+    const getMovies = async () => {
+        const results = await axios.get(`http://localhost:8080/api/lists?type=Series`, {
+            headers: {
+                token: `JWT ${localStorage.getItem('token')}`,
+        }
+    });
+    setLists(results.data);
+    
+    const optionsLists = [];
+    results.data.map(list => {
+        optionsLists.push({ value: list.genre, label: list.title })
+    });
+
+    setOptions(optionsLists);
+    }
+    getMovies();
+    }, [])
+
+    useEffect(() => {
         const getMovies = async () => {
-            console.log(genre ? `&genre=${genre.value}` : '');
-            console.log(genre);
             const results = await axios.get(`http://localhost:8080/api/lists?type=Series${genre ? `&genre=${genre.value}` : ''}`, {
                 headers: {
                     token: `JWT ${localStorage.getItem('token')}`,
             }
         });
-        console.log(results);
-        setLists(results.data);
-        
-        const optionsLists = [];
-        results.data.map(list => {
-            optionsLists.push({ value: list.genre, label: list.title })
-        });
 
-        setOptions(optionsLists);
+        setLists(results.data);
         }
         getMovies();
     }, [genre])
 
-    const handleChange = (selectedOption: string) => {
-        setGenre(selectedOption)
-        console.log(`Option selected:`, selectedOption)
+    const handleChange = (newValue: SingleValue<string>, actionMeta:
+        ActionMeta<string>) => {
+        setGenre(newValue)
       };
 
     return (
@@ -45,6 +55,7 @@ const Movies = () => {
                 value={genre}
                 onChange={handleChange}
                 options={options}
+                isSearchable={false}
             />
             <NavBar />
             {lists.map((list) => {
