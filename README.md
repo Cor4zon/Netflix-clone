@@ -42,3 +42,14 @@
 - [x] фича 8: сделать сохранение jwt-токена в localStorage 
 
 - [x] фича 9: показ фильмов только авторизованным пользователям
+
+- [ ] Feat 15: Show show description on hover
+
+- [ ] Feat 16: Search film and series
+
+- [ ] Feat 14: Add hidden attribute for ProfileSettings 
+
+- [ ] Feat 17: More info modal window on button click
+
+- [ ] Refactoring
+
