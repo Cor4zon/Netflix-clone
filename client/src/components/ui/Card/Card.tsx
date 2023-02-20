@@ -29,7 +29,6 @@ const Card = ({ movieId }: { movieId: number }) => {
           `JWT ${localStorage.getItem('token')}`,
         },
       });
-      console.log(result.data);
       setMovie(result.data);
     };
     getMovie();
