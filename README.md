@@ -47,7 +47,7 @@
 
 - [ ] Feat 16: Search film and series
 
-- [ ] Feat 14: Add hidden attribute for ProfileSettings 
+- [x] Feat 14: Add hidden attribute for ProfileSettings 
 
 - [ ] Feat 17: More info modal window on button click
 
