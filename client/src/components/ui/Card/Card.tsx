@@ -1,5 +1,4 @@
 import './Card.scss';
-import CardImage from '@/assets/images/card-image.png';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -20,10 +19,13 @@ const Card = ({ movieId }) => {
     getMovie();
   }, []);
 
+  const showCardInfoHanlder = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        
+  };
+
   return (
     <Link to={{ pathname: '/watch'}} state={{movir: movie}}>
-      <div className="card">
-        <img src={movie?.img} alt="card" className="card_image" />
+      <div className="card" id={movie?.id} onMouseEnter={(event) => showCardInfoHanlder(event)} style={{backgroundImage: 'url(' + movie?.img + ')'}}>
       </div>
     </Link>
   );
