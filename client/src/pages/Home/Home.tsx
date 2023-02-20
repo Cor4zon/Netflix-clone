@@ -12,7 +12,6 @@ const Home = () => {
     <div className="home">
       <NavBar />
       <Content />
-      <ProfileSettings />
       <Footer />
     </div>
   );

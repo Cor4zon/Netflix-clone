@@ -4,10 +4,13 @@ import ProfileIcon from '@/assets/images/profile-icon.png';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Link } from 'react-router-dom';
-
+import { ProfileSettings } from '@/components/pages/home/profile-settings/ProfileSettings';
+import { useState } from 'react';
 
 
 const NavBar = () => {
+  const [ hidden, setHidden ] = useState(true);
+  
   return (
     <div className="navbar">
       <div className="navbar-menu">
@@ -45,10 +48,13 @@ const NavBar = () => {
         <div className="navbar_button">
           <NotificationsNoneIcon color={'inherit'} />
         </div>
-        <div className="navbar_button">
+        <div className="navbar_button" onMouseEnter={() => setHidden(false)} >
           <img src={ProfileIcon} alt="netflix" />
         </div>
       </div>
+
+      <ProfileSettings hidden={hidden} setHidden={setHidden} />
+
     </div>
   );
 };

@@ -6,9 +6,20 @@ import MoveDownIcon from '@mui/icons-material/MoveDown';
 import ProfileIcon from '@/assets/images/profile-icon.png';
 import { Link } from "react-router-dom";
 
-export const ProfileSettings = () => {
+type ProfileSettingsType = {
+    hidden: boolean, 
+    setHidden: React.Dispatch<React.SetStateAction<boolean>>,
+};
+
+export const ProfileSettings = ({hidden, setHidden}: ProfileSettingsType) => {
+    if (hidden) {
+        return <></>
+    }
+
   return (
-    <div className='profile-settings'>
+    <div className='profile-settings' onMouseEnter={() => setHidden(false)} onMouseLeave={() => {
+        setHidden(true);
+    }}>
       <ul className="profile-setting-list">
       <Link to="/profile/:profileId">
             <li className="profile-settings-item">
