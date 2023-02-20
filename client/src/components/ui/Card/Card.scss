@@ -5,3 +5,12 @@
   height: 146px;
   background-size: cover;
 }
+
+.bigCard {
+  display: block;
+  background-color: red;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+}
