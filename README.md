@@ -43,7 +43,7 @@
 
 - [x] фича 9: показ фильмов только авторизованным пользователям
 
-- [ ] Feat 15: Show show description on hover
+- [ ] Feat 15: Show show description on hover 🔥
 
 - [ ] Feat 16: Search film and series
 
