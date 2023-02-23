@@ -58,3 +58,5 @@
 - [ ] Fix UI/UX issues
 
 - [ ] Refactoring Code
+
+- [ ] Deploy
