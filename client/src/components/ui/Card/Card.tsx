@@ -2,21 +2,7 @@ import './Card.scss';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-
-type MovieType = {
-  "_id": number,
-  "title": string,
-  "desc": string,
-  "img": string,
-  "bigImg": string,
-  "titleImg": string,
-  "trailer": string,
-  "video": string,
-  "year": number,
-  "limit": string,
-  "genre": string,
-  "isSeries": boolean
-};
+import { MovieType } from '@/types/lib';
 
 const Card = ({ movieId }: { movieId: number }) => {
   const [movie, setMovie] = useState<MovieType | null>(null);
