@@ -49,7 +49,7 @@
 
 - [ ] Feat 16: Search film and series
 
-- [ ] Feat 17: More info modal window on button click
+- [x] Feat 17: More info modal window on button click
 
 - [ ] Feat 18: Save film or show to my List
 
