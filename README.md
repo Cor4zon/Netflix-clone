@@ -53,5 +53,8 @@
 
 - [ ] Feat 18: Save film or show to my List
 
-- [ ] Refactoring
+- [ ] Feat 19: Register functionality
 
+- [ ] Fix UI/UX issues
+
+- [ ] Refactoring Code
