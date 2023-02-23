@@ -1,20 +1,32 @@
-import React from 'react';
 import "./Modal.scss";
+import { MovieType } from '@/types/lib';
 
-const Modal = ({ movie, setIsModalOpen }) => {
+type ModalProps = {
+    movie: MovieType,
+    setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>,
+}
+
+const Modal = ({ movie, setIsModalOpen }: ModalProps) => {
     
-    const closeModalHandler = (event) => {
+    const closeModalHandler = (event: any) => {
         if (event.target.className === 'modal-background') {
             setIsModalOpen(false)
         }
     }
+
+    console.log(movie);
+
     return (
-        <div className='modal-background' onClick={closeModalHandler}>
-                <div className='modal'>
-                <button onClick={() => setIsModalOpen(false)}>X</button>
-                <p>Modal</p>
+        <>
+            <div className='modal-background' onClick={closeModalHandler}>
             </div>
-        </div>
+            <div className='modal'>
+                    <button className="modal-close-btn" onClick={() => setIsModalOpen(false)}>X</button>
+                    <p>Modal</p>
+                <div className="modal-image" id={String(movie?._id)} style={{backgroundImage: 'url(' + movie?.img + ')'}}></div>
+            </div>
+        </>
+        
     );
 };
 
