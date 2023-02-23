@@ -1,0 +1,22 @@
+.modal {
+    width: 500px;
+    height: 1000px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.modal-background {
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100vw;
+    // todo: что-то не то
+    height: 1000vh;
+    z-index: 1000;
+}
