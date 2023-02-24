@@ -55,7 +55,6 @@ router.get("/:id", verify, async (req, res) => {
     }
 })
 
-
 // GET RANDOM
 router.get("/random", verify, async (req, res) => {
     const type = req.query.type;
@@ -78,11 +77,18 @@ router.get("/random", verify, async (req, res) => {
     }
   });
 
-// GET ALL
+// GET ALL + Search
 router.get("/", verify, async (req, res) => {
+    const search = req.query.search;
     try {
-        const movies = await Movie.find();
-        res.status(200).json(movies.reverse());
+        if (search) {
+            console.log(search);
+            const movies = await Movie.find({ title: "The Code"});
+            res.status(200).json(movies.reverse());
+        } else {
+            const movies = await Movie.find();
+            res.status(200).json(movies.reverse());
+        }
     } catch (err) {
         res.status(500).json(err);
     }
