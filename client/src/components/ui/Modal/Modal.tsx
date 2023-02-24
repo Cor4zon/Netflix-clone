@@ -13,17 +13,19 @@ const Modal = ({ movie, setIsModalOpen }: ModalProps) => {
             setIsModalOpen(false)
         }
     }
-
-    console.log(movie);
-
+    
     return (
         <>
             <div className='modal-background' onClick={closeModalHandler}>
             </div>
             <div className='modal'>
                     <button className="modal-close-btn" onClick={() => setIsModalOpen(false)}>X</button>
-                    <p>Modal</p>
-                <div className="modal-image" id={String(movie?._id)} style={{backgroundImage: 'url(' + movie?.img + ')'}}></div>
+                    <div className="modal-image" id={String(movie?._id)} style={{backgroundImage: 'url(' + movie?.img + ')'}}></div>
+                    <p>{movie?.title}</p>
+                    <p>{movie?.desc}</p>
+                    <p>{movie?.year}</p>
+                    <p>{movie?.genre}</p>
+                    <p>{movie?.isSeries}</p>
             </div>
         </>
         

@@ -11,6 +11,10 @@ import { useState } from 'react';
 const NavBar = () => {
   const [ hidden, setHidden ] = useState(true);
   
+  const search = document.querySelector(".search");
+  const input = document.querySelector(".input");
+
+
   return (
     <div className="navbar">
       <div className="navbar-menu">
@@ -42,8 +46,14 @@ const NavBar = () => {
       </div>
 
       <div className="navbar-buttons__container">
-        <div className="navbar_button">
-          <SearchIcon color={'inherit'} />
+        <div className="search">
+          <input type="text" className="input" placeholder="Search..." />
+          <button className="btn" onClick={() => {
+            search?.classList.toggle("active");
+            input?.focus();
+          }}>
+            <SearchIcon color={'inherit'} />
+          </button>
         </div>
         <div className="navbar_button">
           <NotificationsNoneIcon color={'inherit'} />
