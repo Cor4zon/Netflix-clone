@@ -10,7 +10,6 @@ import Footer from '@/components/pages/home/footer/Footer';
 const Home = () => {
   return (
     <div className="home">
-      {/* <NavBar /> */}
       <Content />
       <Footer />
     </div>
