@@ -14,7 +14,24 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    children: [],
+    children: [
+      {
+        path: '/movies',
+        element: <Movies />,
+      },
+      {
+        path: '/series',
+        element: <Series />,
+      },
+      {
+        path: '/search',
+        element: <SearchPage />,
+      },
+      {
+        path: '/my-list',
+        element: <MyList />,
+      },
+    ],
     errorElement: <PageNotFound />,
   },
   {
@@ -30,23 +47,7 @@ export const router = createBrowserRouter([
     element: <Watch />,
   },
   {
-    path: '/my-list',
-    element: <MyList />,
-  },
-  {
     path: '/signout',
     element: <SignOut />,
-  },
-  {
-    path: '/movies',
-    element: <Movies />,
-  },
-  {
-    path: '/series',
-    element: <Series />,
-  },
-  {
-    path: '/search',
-    element: <SearchPage />,
   },
 ]);
