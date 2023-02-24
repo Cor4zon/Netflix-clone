@@ -11,8 +11,6 @@ import { useState } from 'react';
 const NavBar = () => {
   const [ hidden, setHidden ] = useState(true);
   
-  const search = document.querySelector(".search");
-  const input = document.querySelector(".input");
 
 
   return (
@@ -49,6 +47,8 @@ const NavBar = () => {
         <div className="search">
           <input type="text" className="input" placeholder="Search..." />
           <button className="btn" onClick={() => {
+            const search = document.querySelector(".search");
+            const input = document.querySelector(".input");
             search?.classList.toggle("active");
             input?.focus();
           }}>
