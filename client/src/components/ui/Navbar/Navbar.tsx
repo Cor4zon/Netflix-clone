@@ -3,14 +3,21 @@ import NetflixLogo from '@/assets/images/netflix-logo.svg';
 import ProfileIcon from '@/assets/images/profile-icon.png';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ProfileSettings } from '@/components/pages/home/profile-settings/ProfileSettings';
 import { useState } from 'react';
 
 
 const NavBar = () => {
   const [ hidden, setHidden ] = useState(true);
+  const [ searchStr, setSearchStr ] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
   
+  if (searchStr && location.pathname !== '/search') {
+    console.log(location.pathname);
+    navigate("/search");
+  }
 
 
   return (
@@ -45,7 +52,10 @@ const NavBar = () => {
 
       <div className="navbar-buttons__container">
         <div className="search">
-          <input type="text" className="input" placeholder="Search..." />
+          <input type="text" className="input" placeholder="Search..." onChange={(event) => {
+            console.log(event.target.value);
+            setSearchStr(event.target.value);
+          }}/>
           <button className="btn" onClick={() => {
             const search = document.querySelector(".search");
             const input = document.querySelector(".input");

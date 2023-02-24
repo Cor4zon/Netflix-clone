@@ -8,6 +8,7 @@ import MyList from '@/pages/MyList/MyList';
 import SignOut from '@/pages/SignOut/SignOut';
 import Movies from '@/pages/Movies/Movies';
 import Series from '@/pages/Series/Series';
+import SearchPage from '@/pages/SearchPage/SearchPage';
 
 export const router = createBrowserRouter([
   {
@@ -43,5 +44,9 @@ export const router = createBrowserRouter([
   {
     path: '/series',
     element: <Series />,
+  },
+  {
+    path: '/search',
+    element: <SearchPage />,
   },
 ]);
