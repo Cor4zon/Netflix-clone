@@ -9,7 +9,7 @@ const SingIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const loginHandler = (event) => {
+  const loginHandler = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const login = async () => {
       const result = await axios({
@@ -17,12 +17,12 @@ const SingIn = () => {
         url: `http://localhost:8080/api/auth/login`,
         data: {
           email,
-          password
+          password,
         },
       });
-      localStorage.setItem("token", result.data.accessToken);
+      localStorage.setItem('token', result.data.accessToken);
       console.log(result);
-      navigate("/");
+      navigate('/');
     };
 
     try {
@@ -40,7 +40,7 @@ const SingIn = () => {
         <div className="sign-in-container">
           <form
             className="signin-form"
-            method='post'
+            method="post"
             action=""
             onSubmit={(event) => loginHandler(event)}>
             <label>Sign In</label>

@@ -1,5 +1,6 @@
 import Button from '@/components/ui/Button/Button';
 import Modal from '@/components/ui/Modal/Modal';
+import { MovieType } from '@/types/lib';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -8,7 +9,7 @@ import './MainShow.scss';
 const CURRENT_MAIN_SHOW_ID = '63e8b52a0ad1339da87926f0/'
 
 const MainShow = () => {
-  const [ movie, setMovie ] = useState(null);
+  const [ movie, setMovie ] = useState<MovieType | null>(null);
   const [ isModalOpen, setIsModalOpen] = useState(false);
   
   useEffect(() => {
@@ -27,7 +28,7 @@ const MainShow = () => {
 
   return (
     <div className="main-show__container" style={{backgroundImage: 'url(' + movie?.img + ')'}}>
-      { isModalOpen && <Modal movie={movie} setIsModalOpen={setIsModalOpen} />}
+      { isModalOpen && <Modal movie={movie!} setIsModalOpen={setIsModalOpen} />}
       <div className="main-show__content">
         <img src={movie?.titleImg} alt="show-logo" className="titleImg" />
         <p className="main-show__description">

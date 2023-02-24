@@ -3,7 +3,6 @@ import NavBar from '@/components/ui/Navbar/Navbar';
 import axios from 'axios';
 import { useEffect, useState} from 'react';
 import Select, { ActionMeta, SingleValue } from 'react-select';
-
 import "./Series.scss";
 
 

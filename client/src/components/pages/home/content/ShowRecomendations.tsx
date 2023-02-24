@@ -3,7 +3,11 @@ import './ShowRecomendations.scss';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-const ShowRecomendations = ({ type }) => {
+type ShowRecomendationsProps = {
+  type?: string;
+}
+
+const ShowRecomendations = ({ type }: ShowRecomendationsProps) => {
   const [lists, setLists] = useState([]);
   const [genre, setGenre] = useState(null);
 
@@ -16,8 +20,7 @@ const ShowRecomendations = ({ type }) => {
           }`,
           {
             headers: {
-              token:
-                `JWT ${localStorage.getItem('token')}`,
+              token: `JWT ${localStorage.getItem('token')}`,
             },
           },
         );
