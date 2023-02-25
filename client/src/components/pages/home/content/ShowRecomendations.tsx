@@ -34,6 +34,7 @@ const ShowRecomendations = ({ type }: ShowRecomendationsProps) => {
 
   return (
     <div className="shows-wrapper">
+      {/* todo: add type for list */}
       {lists.map((list) => {
         return <CardList list={list} key={list.title} />;
       })}
