@@ -9,12 +9,17 @@ import SignOut from '@/pages/SignOut/SignOut';
 import Movies from '@/pages/Movies/Movies';
 import Series from '@/pages/Series/Series';
 import SearchPage from '@/pages/SearchPage/SearchPage';
+import Home from '@/pages/Home/Home';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
+      {
+        path: '',
+        element: <Home />,
+      },
       {
         path: '/movies',
         element: <Movies />,

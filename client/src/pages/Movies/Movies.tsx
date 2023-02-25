@@ -21,7 +21,6 @@ const Movies = () => {
     }, [])
     return (
         <div>
-            <NavBar />
             {lists.map((list) => {
                 return <CardList list={list} key={list?.title} />;
             })}

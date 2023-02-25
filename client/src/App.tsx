@@ -6,16 +6,15 @@ import { Outlet } from 'react-router-dom';
 import NavBar from './components/ui/Navbar/Navbar';
 
 function App() {
-  const token = localStorage.getItem("token");
-  
+  const token = localStorage.getItem('token');
+
   if (!token) {
-    return <SingIn />
+    return <SingIn />;
   }
 
   return (
     <div className="page-container">
       <NavBar />
-      <Home />
       <Outlet />
     </div>
   );

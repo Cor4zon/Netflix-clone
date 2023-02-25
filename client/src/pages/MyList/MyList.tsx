@@ -4,7 +4,6 @@ import './MyList.scss';
 const MyList = () => {
   return (
     <div>
-      <NavBar />
       <h1 className="my-list-title">My List</h1>
       <p className="my-list-no-items">You haven't added any titles to your list yet.</p>
     </div>

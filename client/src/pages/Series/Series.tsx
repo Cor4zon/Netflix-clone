@@ -57,7 +57,6 @@ const Movies = () => {
                 options={options}
                 isSearchable={false}
             />
-            <NavBar />
             {lists.map((list) => {
                 return <CardList list={list} key={list?.title} />;
             })}
