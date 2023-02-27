@@ -3,16 +3,20 @@ import NetflixLogo from '@/assets/images/netflix-logo.svg';
 import ProfileIcon from '@/assets/images/profile-icon.png';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import { useSelector, useDispatch } from 'react-redux';
+
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ProfileSettings } from '@/components/pages/home/profile-settings/ProfileSettings';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { updateList } from '@/features/searchList/searchListReducer';
 
 const NavBar = () => {
   const [hidden, setHidden] = useState(true);
   const [searchStr, setSearchStr] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useDispatch();
 
   if (searchStr && location.pathname !== '/search') {
     navigate('/search');
@@ -29,7 +33,7 @@ const NavBar = () => {
             },
           },
         );
-        console.log(res.data);
+        dispatch(updateList(res.data));
       } catch (err) {
         console.log(err);
       }
@@ -67,7 +71,6 @@ const NavBar = () => {
             className="input"
             placeholder="Search..."
             onChange={(event) => {
-              console.log(event.target.value);
               setSearchStr(event.target.value);
             }}
           />
