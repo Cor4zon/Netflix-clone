@@ -29,8 +29,6 @@
 
 10. How to add dynamic [background image via style](https://stackoverflow.com/questions/36413862/set-background-in-react-js-using-style)
 
-11. Add issues
-
 
 ## Todo list for this week 
 
@@ -63,3 +61,5 @@
 - [ ] Refactoring Code
 
 - [ ] Deploy
+
+- [ ] Add issues
