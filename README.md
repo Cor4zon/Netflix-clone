@@ -1,8 +1,6 @@
 ## Netflix clone
 
 
-[videos](https://gist.github.com/jsturgis/3b19447b304616f18657)
-
 [Mongoose](https://masteringjs.io/tutorials/mongoose/find)
 
 ## What i learned 🧠
